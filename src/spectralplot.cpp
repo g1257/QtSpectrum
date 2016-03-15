@@ -19,6 +19,7 @@ void SpectralPlot::on_pushButton_clicked()
 	int x = this->x();
 	int y = this->y();
 	parent_->move(x,y);
-    this->hide();
+	this->hide();
 	parent_->show();
 }
+

@@ -27,6 +27,7 @@ void GsWindow::on_pushButton_2_clicked()
 	int x = this->x();
 	int y = this->y();
 	child_->move(x,y);
-    child_->show();
+	child_->show();
 	this->hide();
 }
+

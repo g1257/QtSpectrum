@@ -17,15 +17,16 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    quick_exit(0);
+	quick_exit(0);
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    if (!gsWindow_)
+	if (!gsWindow_)
 		gsWindow_ = new GsWindow(this);
 	int x = this->x();
 	int y = this->y();
 	gsWindow_->move(x,y);
 	gsWindow_->show();
 }
+

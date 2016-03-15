@@ -21,16 +21,17 @@ void SpectralOne::on_pushButton_clicked()
 	int x = this->x();
 	int y = this->y();
 	parent_->move(x,y);
-    parent_->show();
+	parent_->show();
 	this->hide();
 }
 
 void SpectralOne::on_pushButton_2_clicked()
 {
-    if (!child_) child_ = new SpectralPlot(this);
+	if (!child_) child_ = new SpectralPlot(this);
 	int x = this->x();
 	int y = this->y();
 	child_->move(x,y);
 	child_->show();
 	this->hide();
 }
+
